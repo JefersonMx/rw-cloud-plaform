@@ -1,10 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Cloudlify</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     </head>
     <body>
+        <header>
+            <!--navbar-->
+            <div class="navbar">
+                <div class="container flex-container">
+                    <h1 class="name">Cloudlify</h1>
+                    <nav class="menu">
+                        <ul class="menu__row">
+                            <li class="menu__list">
+                                <a class="menu__link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link" href="cloudlify.html">Cloudlify</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link" href="documentation.html">Documentación</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!--showcase section-->
+            <section class="showcase">
+                <div class="container grid-container">
+                    <div class="showcase-text">
+                        <h2 class="showcase-text__main-title">Despliegue fácil</h2>
+                        <p>Despliega aplicaciones web de todo tipo, desde
+                            escala enterprise APIs a sitios web estáticos
+                            individuales. Llena el formulario y empieza con tu prueba gratis
+                        </p>
+                        <a class="btn btn-outline" href="cloudlify.html">Leer más</a>
+                    </div>
+                    <div class="showcase-form card">
+                        <h2>Solicita tu prueba</h2>
+                        <form action="">
+                            <div class="showcase-form__control">
+                                <input type="text" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="showcase-form__control">
+                                <input type="text" name="company" placeholder="Company name" required>
+                            </div>
+                            <div class="showcase-form__control">
+                                <input type="text" name="email" placeholder="Email" required>
+                            </div>
+                            <input class="btn btn-primary" type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- statistics -->
+            <section class="statistics">
+                <div class="container">
+                    <h3 class="statistics__heading text-center marginy-1">Bienvenido a la mejor plataforma para construiir aplicaciones de todo tipo
+                    con una arquitectura y escalabilidad moderna.
+                    </h3>
+                    <div class="grid-container grid-container-3 text-center marginy-4">
+                        <div>
+                            <i class="fas fa-server fa-3x"></i>
+                            <h3>10,349,000</h3>
+                            <p class="statistics__text-secondary">Deployments</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-upload fa-3x"></i>
+                            <h3>950 TB</h3>
+                            <p class="statistics__text-secondary">Published</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-project-diagram fa-3x"></i>
+                            <h3>1,230,299</h3>
+                            <p class="statistics__text-secondary">Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cloud-cli">
+                <div class="container grid-container">
+                    <figure class="img-container">
+                        <img src="images/cli.png" alt="" class="img-container__img">
+                    </figure>
+                    <div class="cloud-cli__item1 card">Uso fácil, crossplatform CLI</div>
+                    <div class="cloud-cli__item2 card">Despliegue en segundos</div>
+                </div>
+            </section>
+            <section class="cloud-hosting text-center marginy-3">
+                <div class="container flex-container">
+                    <div class="cloud-hosting__left">
+                        <h3>Cloud hosting extremo</h3>
+                        <p>CLoud hosting como nunca lo habías visto, Rápido, eficiente abnd escalable</p>
+                        <a class="btn btn-dark" href="cloudlify.html">Leer mas</a>
+                    </div>
+                    <figure class="cloud-hosting__img-container">
+                        <img src="images/cloud.png" alt="">
+                    </figure>
+                </div>
+            </section>
+            <section class="languages">
+                <div class="container grid-container text-center">
+                    <h3>Lenguajes que soportamos</h3>
+                    <div class="card">
+                        <h3>PHP</h3>
+                        <img src="images/logos/php.png" alt="">
+                    </div>
+                    <div class="card">
+                        <h3>Node.js</h3>
+                        <img src="images/logos/node.png" alt="">
+                    </div>
+                    <div class="card">
+                        <h3>C#</h3>
+                        <img src="images/logos/csharp.png" alt="">
+                    </div>
+                    <div class="card">
+                        <h3>Scala</h3>
+                        <img src="images/logos/scala.png" alt="">
+                    </div>
+                    <div class="card">
+                        <h3>Ruby</h3>
+                        <img src="images/logos/ruby.png" alt="">
+                    </div>
+                    <div class="card">
+                        <h3>Python</h3>
+                        <img src="images/logos/python.png" alt="">
+                    </div>
+                    <div class="card">
+                        <h3>Clojure</h3>
+                        <img src="images/logos/clojure.png" alt="">
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container flex-container  marginy-5">
+                <div class="footer-left">
+                    <h2 class="">Cloudlify</h2>
+                    <p>Copyright°2021</p>
+                </div>
+                <dif class="footer-mid flex-container">
+                    <a href="index.html">Inicio</a>
+                    <a href="Cloudlify.html">Cloudlify</a>
+                    <a href="Documentation.html">Documentación</a>
+                </dif>
+                <div class="footer-right ">
+                    <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
