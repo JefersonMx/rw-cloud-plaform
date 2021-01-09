@@ -28,8 +28,8 @@ a {
     text-decoration: none;
     color: var(--fourth);
 }
-h1, h2 {
-    font-weight: 500;
+h1, h2,h3 {
+    font-weight: 600;
     line-height: 1.2;
     margin: 10px 0;
 }
@@ -108,7 +108,7 @@ img {
     max-width: 500px;
     margin: auto;
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: lighter;
 }
 .statistics .grid-container h3 {
     font-size: 2em;
@@ -131,7 +131,6 @@ img {
 }
 .cloud-cli__item2.card, .cloud-cli__item1.card {
     box-shadow: 0 2px 10px 1px rgba(0,0,0, 0.2);
-    height: 90px;
 }
 /* CLoud hosting */
 .cloud-hosting {
@@ -140,9 +139,11 @@ img {
 .cloud-hosting .flex-container {
     justify-content: space-between;
 }
+.cloud-hosting__left {
+    margin: 20px 20px;
+}
 .cloud-hosting__left h3 {
     font-size: 40px;
-    font-weight:lighter;
 }
 .cloud-hosting__img-container {
     padding: 20px;
@@ -260,4 +261,60 @@ img {
 }
 .marginy-5 {
     margin-top: 3.5rem;
+}
+/* Media queries */
+@media only screen and ( max-width: 768px){
+    .showcase .grid-container,
+    .statistics .grid-container-3,
+    .cloud-cli .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .showcase {
+        height: auto;
+    }
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+    }
+    .showcase-text {
+        text-align: center;
+        margin-top: 100px;
+    }
+    .cloud-cli__item2, .cloud-cli__item1 {
+        grid-column: 1 ;
+    }
+    .cloud-hosting .flex-container {
+        flex-direction: column;
+    }
+    .cloud-hosting__left{
+        margin-top: 30px;
+    }
+    .cloud-hosting__img-container {
+        width: 350px;
+    }
+    .languages .grid-container {
+        grid-template-columns:  repeat(4, auto);
+        grid-template-rows: repeat(3,auto );
+    }
+    .languages .container > :first-child {
+        grid-column: 1 / span 4;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+    .navbar .flex-container {
+        flex-direction: column;
+    }
+    .navbar .menu__row {
+        background-color: rgba(0,0,0, 0.2);
+    }
+    .showcase-text {
+        margin-top: 50px;
+    }
+    .showcase-form.card {
+        width: 300px;
+    }
 }
