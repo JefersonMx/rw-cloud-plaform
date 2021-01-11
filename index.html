@@ -39,11 +39,15 @@
                             escala enterprise APIs a sitios web estáticos
                             individuales. Llena el formulario y empieza con tu prueba gratis
                         </p>
-                        <a class="btn btn-outline" href="cloudlify.html">Leer más</a>
+                        <a class="btn btn-outline btn-animation" href="cloudlify.html">Leer más</a>
                     </div>
                     <div class="showcase-form card">
                         <h2>Solicita tu prueba</h2>
-                        <form action="">
+                        <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact">
+                            <p class="hidden">
+                                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                              </p>
                             <div class="showcase-form__control">
                                 <input type="text" name="name" placeholder="Name" required>
                             </div>

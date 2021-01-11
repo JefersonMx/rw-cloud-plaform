@@ -46,6 +46,10 @@ p {
 img {
     width: 100%;
 }
+.hidden {
+    visibility:hidden;
+    height: 0;
+}
 /* idenx.html section */
 .navbar {
     background-color: var(--fiveth);
@@ -72,6 +76,9 @@ img {
     color: var(--third);
     position: relative;
 }
+.showcase-text {
+    animation: left-to-rigth 1s ease-in;
+}
 .showcase .grid-container {
     grid-template-columns: 55% 45%;
     gap: 30px;
@@ -83,6 +90,10 @@ img {
     width: 400px;
     z-index: 150;
     justify-self: flex-end;
+    animation: rigth-to-left 1s ease-in;
+}
+.btn-animation {
+    animation: bottom-to-top 2s ease-in;
 }
 
 .showcase-form__control {
@@ -363,6 +374,31 @@ img {
 .padding-2 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+}
+/* Animation */
+@keyframes left-to-rigth {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes rigth-to-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes bottom-to-top {
+    0% {
+        transform: translateY(2000%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 /* Responsive */
 @media only screen and ( max-width: 768px){
