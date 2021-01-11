@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 /* variables */
 :root {
     --first: #353535;
@@ -6,6 +6,8 @@
     --third: #FFFFFF;
     --fourth: #D9D9D9;
     --fiveth: #284B63;
+    --sixth: #5cb85c;
+    --seventh:  #047aed;
   }
 * {
     box-sizing: border-box;
@@ -44,7 +46,7 @@ p {
 img {
     width: 100%;
 }
-/* menu */
+/* idenx.html section */
 .navbar {
     background-color: var(--fiveth);
     color: var(--third);
@@ -149,10 +151,11 @@ img {
 .cloud-hosting__left h3 {
     font-size: 40px;
 }
-.cloud-hosting__img-container {
+.cloud-hosting .img-container-2 {
     padding: 20px;
     width: 450px;
 }
+/* Supported languages */
 .languages {
     color: var(--first);
 }
@@ -177,7 +180,11 @@ img {
 .languages .container > *:first-child {
     grid-column: 1 /span 7;
 }
-.cloudlify-head .img-container-2 {
+/* Cloud.html section */
+.cloudlify-head {
+    color: var(--third);
+}
+.cloudlify-head .img-container-2, .documentation-head .img-container-2  {
     width: 200px;
     justify-self: flex-end;
 }
@@ -200,6 +207,50 @@ img {
 }
 .cloudlify-main .grid-container> *:nth-child(2) {
     grid-column: 1 / span 2;
+}
+/* Documentation.html section */
+.documentation-head {
+    color: var(--third);
+}
+.documentation-main .grid-container {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+.documentation-main h3, h2 {
+    font-weight: 400;
+}
+.documentation-main .card {
+    padding: 30px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0, 0.2);
+}
+.text-color-1 {
+    color:  var(--seventh);
+}
+.documentation-main-link {
+    color: var(--first);
+}
+.documentation-main-list {
+    margin: 10px;
+    border-bottom: 1px #ccc solid;
+}
+.documentation-main .card i {
+    margin: 2px;
+}
+.alert {
+    background-color: var(--light-color);
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+    font-weight: lighter;
+}
+.alert-success {
+    background-color:var(--sixth);
+}
+.documentation-main .card pre {
+    padding: 15px;
+    color: #fff;
+    background-color: #353535;
 }
 .footer {
     background-color: var(--first);
@@ -264,11 +315,15 @@ img {
     border-radius: 5px;
     transition: .1s;
 }
+.btn-primary {
+    background: var(--seventh);
+    color: #fff;
+}
 .bg-primary {
     background-color: var(--fiveth);
 }
 .bg-light {
-    background-color: var(--fourth);
+    background-color: #f4f4f4;
 }
 .btn:hover {
     transform: scale(.95);
@@ -308,7 +363,7 @@ img {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
-/* Media queries */
+/* Responsive */
 @media only screen and ( max-width: 768px){
     .showcase .grid-container,
     .statistics .grid-container-3,
