@@ -258,13 +258,14 @@ img {
     flex-wrap: wrap;
 }
 .footer-left, .footer-mid ,.footer-right {
+    margin-left: 10px;
     flex: 30%;
 }
 .footer .footer-right {
     text-align: right;
 }
-.footer-right a {
-    margin: 0 10px 0 5px;
+.footer-right a, i {
+    margin: 0 10px 5px 5px;
 }
 .footer .footer-mid  {
     flex-direction: column;
@@ -367,7 +368,12 @@ img {
 @media only screen and ( max-width: 768px){
     .showcase .grid-container,
     .statistics .grid-container-3,
-    .cloud-cli .grid-container {
+    .cloud-cli .grid-container,
+    .cloudlify-main .grid-container,
+    .cloudlify-head .grid-container,
+    .cloudlify-sub-head .grid-container,
+    .documentation-head  .grid-container,
+    .documentation-main .grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -400,6 +406,20 @@ img {
     }
     .languages .container > :first-child {
         grid-column: 1 / span 4;
+    }
+    .cloudlify-head, .cloudlify-sub-head,
+    .cloudlify-main, .documentation-head {
+        text-align: center;
+    }
+    .cloudlify-head .img-container-2, .cloudlify-sub-head .img-container-2,
+    .cloudlify-main .img-container-2, .documentation-head .img-container-2 {
+        justify-self: center;
+    }
+    .cloudlify-main .grid-container {
+        grid-template-columns: auto;
+    }
+    .cloudlify-main .grid-container > :first-child, .cloudlify-main .grid-container >:nth-child(2) {
+        grid-column: 1 ;
     }
 }
 @media only screen and (max-width: 500px) {
